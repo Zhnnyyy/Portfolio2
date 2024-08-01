@@ -13,6 +13,10 @@ app.post("/contact", (req, res) => {
   res.json({ Error: false });
 });
 
+app.post("/sample", (req, res) => {
+  res.json({ msg: "Hello World" });
+});
+
 app.listen(5000, () => {
   console.log("Server is running on port 5000");
 });
