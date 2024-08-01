@@ -6,11 +6,8 @@
     "client": "cd portfolio && npm install && npm run build",
     "server": "cd server && npm install && npm start",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "concurrently \"npm run client\" \"npm run server\"",
-    "deploy": "npm run client && npm run server",
-    "frontend": "cd portfolio && npm run build && npm install && npm start",
-    "backend": "cd server && npm install && npm start",
-    "start": "concurrently \"npm install\" \"npm run frontend\" \"npm run backend\""
+    "dev": "concurrently \"cd portfolio && npm start\" \"cd server && npm start\"",
+    "deploy": "npm run client && npm run server"
   },
   "author": "",
   "license": "ISC",
