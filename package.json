@@ -8,9 +8,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "concurrently \"npm run client\" \"npm run server\"",
     "deploy": "npm run client && npm run server",
-    "frontend": "cd portfolio && npm run build && npm run install && npm start",
-    "backend": "cd server && npm install && npm run start",
-    "start": "npm run frontend && npm run backend"
+    "frontend": "cd portfolio && npm run build && npm install && npm start",
+    "backend": "cd server && npm install && npm start",
+    "start": "concurrently \"npm install\" \"npm run frontend\" \"npm run backend\""
   },
   "author": "",
   "license": "ISC",
