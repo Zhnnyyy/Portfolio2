@@ -4,8 +4,9 @@ import NavBar from "../navBar/NavBar";
 import About from "../About/About";
 import Skills from "../Skill/Skills";
 import Contact from "../Contact/Contact";
+import Project from "../Project/Project";
 function Content() {
-  const [tab, setTab] = useState("contact");
+  const [tab, setTab] = useState("about");
   function checkTarget(data) {
     setTab(data);
   }
@@ -17,6 +18,7 @@ function Content() {
       {tab == "about" ? <About /> : ""}
       {tab == "skill" ? <Skills /> : ""}
       {tab == "contact" ? <Contact /> : ""}
+      {tab == "project" ? <Project /> : ""}
     </div>
   );
 }
