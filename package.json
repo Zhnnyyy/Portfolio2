@@ -6,7 +6,8 @@
     "client": "npm start --prefix portfolio",
     "server": "npm start --prefix server",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "concurrently \"npm run client\" \"npm run server\""
+    "dev": "concurrently \"npm run client\" \"npm run server\"",
+    "sample": "npm install && npm run build"
   },
   "author": "",
   "license": "ISC",
