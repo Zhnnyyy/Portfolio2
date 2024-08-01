@@ -13,7 +13,7 @@ app.post("/contact", (req, res) => {
   res.json({ Error: false });
 });
 
-app.post("/sample", (req, res) => {
+app.get("/sample", (req, res) => {
   res.json({ msg: "Hello World" });
 });
 
