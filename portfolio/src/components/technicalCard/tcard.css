@@ -1,0 +1,31 @@
+.tcard-container {
+  width: 100%;
+  min-width: 100px;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  background-color: #222224;
+  border-radius: 20px;
+}
+
+.tcard-container img {
+  width: 100px;
+  height: 100px;
+}
+.tcard-container h3 {
+  color: #fff;
+  font-weight: 500;
+}
+.stars {
+  color: yellow;
+  font-size: 24px;
+}
+.starContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

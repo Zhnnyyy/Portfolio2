@@ -1,0 +1,26 @@
+nav {
+  height: 50px;
+  width: 50%;
+  background-color: #282828;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+ul li {
+  font-size: 16px;
+  font-weight: bold;
+}
+a:hover {
+  color: #c9a78f;
+}

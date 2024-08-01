@@ -1,0 +1,21 @@
+.cardContainer {
+  width: 100%;
+  /* max-width: 300px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  background-color: #222224;
+  border-radius: 20px;
+}
+
+.cardContainer img {
+  width: 100px;
+  height: 100px;
+}
+.cardContainer h3 {
+  color: #fff;
+  font-weight: 500;
+}

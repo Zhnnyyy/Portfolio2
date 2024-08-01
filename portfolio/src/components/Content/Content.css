@@ -1,0 +1,10 @@
+.contentContainer {
+  flex: 1;
+  height: 90vh;
+  background-color: #1e1e1e;
+  border-radius: 20px;
+}
+.header {
+  display: flex;
+  justify-content: flex-end;
+}
