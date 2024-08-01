@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-  "client": "cd portfolio && npm install && npm run build",
-  "server": "cd server && npm install && npm start",
-  "test": "echo \"Error: no test specified\" && exit 1",
-  "dev": "concurrently \"npm run client\" \"npm run server\"",
-  "deploy": "npm run client && npm run server"
-},
+    "client": "cd portfolio && npm install && npm run build",
+    "server": "cd server && npm install && npm start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm run client\" \"npm run server\"",
+    "deploy": "npm run client && npm run server",
+    "frontend": "cd portfolio && npm run build && npm run install && npm start",
+    "backend": "cd server && npm install && npm run start",
+    "start": "npm run frontend && npm run backend"
+  },
   "author": "",
   "license": "ISC",
   "description": "",
