@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import { waveform } from "ldrs";
-require("dotenv").config();
 import "./contact.css";
 function Contact() {
   waveform.register();
-  const URI = process.env.server;
+  const URI = process.env.REACT_APP_SERVER;
   const [submitted, setSubmitting] = useState(false);
   const [frmdata, setfrmdata] = useState({
     email: "",
