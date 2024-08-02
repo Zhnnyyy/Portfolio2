@@ -1,6 +1,9 @@
 import React, { useState } from "react";
+import { waveform } from "ldrs";
 import "./contact.css";
 function Contact() {
+  waveform.register();
+  const [submitted, setSubmitting] = useState(false);
   const [frmdata, setfrmdata] = useState({
     email: "",
     subject: "",
@@ -62,6 +65,7 @@ function Contact() {
     if (!Object.values(error).every((err) => err == ""))
       return alert("All fields are required");
     console.log(frmdata);
+    setSubmitting(true);
     const response = await fetch("/contact", {
       method: "POST",
       body: JSON.stringify(frmdata),
@@ -71,6 +75,7 @@ function Contact() {
     });
     const data = await response.json();
     if (!data.Error) {
+      setSubmitting(false);
       alert("Email has been sent");
       setfrmdata({ email: "", subject: "", body: "" });
     } else {
@@ -114,7 +119,18 @@ function Contact() {
           {error.body && (
             <div style={{ color: "red", fontSize: 12 }}>{error.body}</div>
           )}
-          <button type="submit">Send</button>
+          <button type="submit" disabled={submitted}>
+            {submitted ? (
+              <l-waveform
+                size="24"
+                stroke="3"
+                speed="1"
+                color="white"
+              ></l-waveform>
+            ) : (
+              "Send"
+            )}
+          </button>
         </form>
       </div>
     </div>

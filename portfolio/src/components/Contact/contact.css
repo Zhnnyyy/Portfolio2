@@ -56,6 +56,6 @@ form button {
 }
 form button:hover {
   scale: 1.1;
-  background-color: white;
-  color: #c9a78f;
+  /* background-color: white;
+  color: #c9a78f; */
 }
