@@ -63,8 +63,9 @@ function Contact() {
     setError(newErrors);
 
     //validate form if empty input
-    if (!Object.values(error).every((err) => err == ""))
+    if (!Object.values(newErrors).every((err) => err == ""))
       return alert("All fields are required");
+
     setSubmitting(true);
     const response = await fetch(`${URI}/contact`, {
       method: "POST",
