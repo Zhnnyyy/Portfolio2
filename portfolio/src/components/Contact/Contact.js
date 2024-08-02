@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { waveform } from "ldrs";
+require("dotenv").config();
 import "./contact.css";
 function Contact() {
   waveform.register();
+  const URI = process.env.server;
   const [submitted, setSubmitting] = useState(false);
   const [frmdata, setfrmdata] = useState({
     email: "",
@@ -65,7 +67,7 @@ function Contact() {
     if (!Object.values(error).every((err) => err == ""))
       return alert("All fields are required");
     setSubmitting(true);
-    const response = await fetch("/contact", {
+    const response = await fetch(`${URI}/contact`, {
       method: "POST",
       body: JSON.stringify(frmdata),
       headers: {
