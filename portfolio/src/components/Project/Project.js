@@ -23,7 +23,7 @@ function Project() {
         <Item
           img={twp}
           title={"Timekeeping with Payrol System"}
-          tech={"HTML, CSS, NodeJS, ReactNative"}
+          tech={"HTML, CSS, NodeJS, ReactNative, MySql"}
           gitLink={"https://github.com/Zhnnyyy/capstone"}
         />
       </div>
