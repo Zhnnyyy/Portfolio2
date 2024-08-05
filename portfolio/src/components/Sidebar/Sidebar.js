@@ -1,15 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Sidebar.css";
 import Information from "../information/Information";
 import { MdEmail } from "react-icons/md";
 import { FaMobile, FaFacebook } from "react-icons/fa6";
-import { FaBirthdayCake, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaWindowClose } from "react-icons/fa";
 const me = require("../../assets/img/logo-white1.png");
-function Sidebar() {
+function Sidebar({ sidebarPos, onClose }) {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+  }, []);
   return (
-    <div className="sidebarContainer">
+    <div className="sidebarContainer" style={{ left: sidebarPos }}>
+      {isMobile && <FaWindowClose className="hideBtn" onClick={onClose} />}
       <div className="Sidebar-Header">
-        <img src={me} className="mee" alt="my picture" />
+        <img src={me} className="mee" alt="something else" />
         <h3 className="myname">Ed Emmanuel Perpetua</h3>
         <div className="roleName">
           <h2 className="roletxt">Web Developer</h2>

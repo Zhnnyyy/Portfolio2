@@ -1,10 +1,10 @@
-.aboutContainer {
+.projectsContainer {
   padding: 16px;
 }
-.aboutTitle {
+.projectTitle {
   color: white;
 }
-.about-line {
+.project-line {
   width: 50px;
   height: 3px;
   border-radius: 10px;
@@ -12,9 +12,25 @@
   margin-top: 10px;
 }
 .projectContainer {
+  margin-top: 10px;
   width: 100%;
   padding: 16px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+  .projectsContainer {
+    margin-top: 20px;
+  }
+  .projectContainer {
+    margin-top: 10px;
+    flex-direction: column;
+    flex-wrap: unset;
+    align-items: center;
+  }
+  .projectContainer .itemcontainer {
+    width: 100%;
+  }
 }

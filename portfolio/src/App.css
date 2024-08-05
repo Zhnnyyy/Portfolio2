@@ -19,3 +19,10 @@
     /* border: 1px solid red; */
   }
 }
+
+@media only screen and (max-width: 480px) {
+  .container {
+    margin: unset;
+    padding: unset;
+  }
+}

@@ -1,5 +1,4 @@
 .tcard-container {
-  width: 100%;
   min-width: 100px;
   max-width: 250px;
   display: flex;
@@ -28,4 +27,5 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  flex: 1;
 }

@@ -59,3 +59,7 @@ form button:hover {
   /* background-color: white;
   color: #c9a78f; */
 }
+
+@media only screen and (max-width: 480px) {
+  
+}

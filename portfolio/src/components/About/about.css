@@ -51,3 +51,27 @@
   justify-content: space-evenly;
   gap: 20px;
 }
+
+@media only screen and (max-width: 480px) {
+  .infocontainer {
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  .infocontainer .myimg {
+    width: 200px;
+    height: 200px;
+  }
+  .infotxt {
+    padding-right: 1%;
+  }
+  .subTitle {
+    margin-left: unset;
+    text-align: center;
+  }
+  .card-container {
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}

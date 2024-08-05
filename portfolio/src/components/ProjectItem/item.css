@@ -1,7 +1,6 @@
 .itemcontainer {
   min-width: 300px;
-  max-width: 300px;
-  width: 100%;
+  max-width: 400px;
   height: 200px;
   background-color: #222224;
   border-radius: 20px;

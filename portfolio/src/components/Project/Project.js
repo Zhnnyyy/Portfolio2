@@ -6,9 +6,9 @@ const ams = require("../../assets/projects/ams.png");
 const twp = require("../../assets/projects/twp.jpg");
 function Project() {
   return (
-    <div className="aboutContainer">
-      <h1 className="aboutTitle">Projects</h1>
-      <div className="about-line"></div>
+    <div className="projectsContainer">
+      <h1 className="projectTitle">Projects</h1>
+      <div className="project-line"></div>
 
       <div className="projectContainer">
         <Item

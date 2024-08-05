@@ -8,3 +8,20 @@
   display: flex;
   justify-content: flex-end;
 }
+
+@media only screen and (max-width: 480px) {
+  .contentContainer .header {
+    display: none;
+  }
+  .contentContainer {
+    height: unset;
+    border-radius: unset;
+  }
+  .openSidebar {
+    position: fixed;
+    top: 20px;
+    right: 10px;
+    color: #9b8473;
+    font-size: 36px;
+  }
+}
