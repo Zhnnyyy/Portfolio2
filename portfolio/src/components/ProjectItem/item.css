@@ -103,3 +103,14 @@
 .close-button:hover {
   color: red;
 }
+.mainFrame {
+  width: 90%;
+  height: 90%;
+}
+
+@media only screen and (max-width: 480px) {
+  .mainFrame {
+    width: 90%;
+    height: 40%;
+  }
+}

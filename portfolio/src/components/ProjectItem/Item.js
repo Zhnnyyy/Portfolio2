@@ -41,9 +41,10 @@ function Item({ gitLink, vidLink, title, tech, img }) {
             <FaTimes />
           </button>
           <iframe
+          className="mainFrame"
             src={vidLink}
-            width="60%"
-            height="60%"
+   
+            title="hello"
             allow="autoplay"
           ></iframe>
         </div>
