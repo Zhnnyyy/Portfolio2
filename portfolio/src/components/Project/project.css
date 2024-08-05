@@ -1,0 +1,20 @@
+.aboutContainer {
+  padding: 16px;
+}
+.aboutTitle {
+  color: white;
+}
+.about-line {
+  width: 50px;
+  height: 3px;
+  border-radius: 10px;
+  background-color: #c9a78f;
+  margin-top: 10px;
+}
+.projectContainer {
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
