@@ -25,6 +25,7 @@ function Project() {
           title={"Timekeeping with Payrol System"}
           tech={"HTML, CSS, NodeJS, ReactNative, MySql"}
           gitLink={"https://github.com/Zhnnyyy/capstone"}
+          vidLink={"https://capstone-payroll.vercel.app/index.html"}
         />
       </div>
     </div>
